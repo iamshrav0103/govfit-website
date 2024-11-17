@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GovFit - Home</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+     
+
+        h1 {
+            margin: 0;
+            font-size: 54px;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: white; 
+            padding: 1rem;
+            text-align: center;
+            width: 1200px; 
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            font-size: 4rem;
+            margin-left: 140px;
+        }
+
+        .nav-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .nav-list li {
+            display: inline-block;
+        }
+
+        .nav-list a {
+            color: #006699; 
+            text-decoration: none;
+            font-size: 2rem;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 8px 12px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-list a:hover {
+            background-color: #555;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .nav-list a.active {
+            font-weight: bold;
+            color: #006699;
+        }
+
+        /* Main Banner */
+        .banner {
+            background-image: url(flag23.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: right;
+            align-items: center; 
+            color: white;
+            font-size: 48px;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+        }
+
+        .banner section {
+            padding: 60px;
+            text-align: center;
+          
+            box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .banner h2 {
+            font-size: 54px;
+            color: #006699;
+            margin-bottom: 20px;
+        }
+
+        .banner p {
+            font-size: 35px;
+            line-height: 1.8;
+            color: black;
+            max-width: 800px;
+            margin: 20px auto 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 28px;
+            background-color: #1781b6;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #4b9ea0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2b6777;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 48px;
+            }
+
+            .banner {
+                font-size: 36px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-list a {
+                font-size: 16px;
+                padding: 6px 8px;
+            }
+
+            .banner {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="sc.html">Schemes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <section>
+            <h2>Welcome to GovFit</h2>
+            <p>
+                GovFit is your go-to platform for accessing and learning about the various government schemes available to the citizens of India. From farmers to students and families, explore all the assistance and benefits you are eligible for, and let us guide you through the process.
+            </p>
+            <a href="#schemes" class="cta-button">Learn More</a>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 GovFit. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

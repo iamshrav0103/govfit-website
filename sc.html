@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Schemes</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="scheme.css">
+</head>
+<style>
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page Background and Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* padding: 20px; */
+    background-image: url('indianflag.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: white; 
+    /* Background color of the navbar */
+    padding: 0.5rem;                
+    text-align: center;           /* Center-aligns the navbar content */
+    width: 1900px;                  /* Full width navbar */
+    position: fixed;              /* Fixed position at the top */
+    top: 0;
+    z-index: 1000;
+    font-size: 4rem;
+    
+}
+
+.nav-list {
+    list-style-type: none;        /* Removes bullet points from list items */
+    margin: 0;                    /* Removes default margin */
+    padding: 0;                   /* Removes default padding */
+    display: flex;                /* Displays items in a row */
+    justify-content: center;      /* Centers items horizontally */
+    gap: 2rem;                    /* Adds spacing between items */
+}
+
+.nav-list li {
+    display: inline-block;        /* Inline-block for list items */
+}
+
+.nav-list a {
+    color: #006699;                 /* Text color of the links */
+    text-decoration: none;        /* Removes underline from links */
+    font-size: 2rem;            /* Font size of the links */
+    font-family: 'Times New Roman', Times, serif; /* Font style */
+    padding: 8px 12px;            /* Padding around each link */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-list a:hover {
+    background-color: #555;       /* Background color on hover */
+    border-radius: 5px;           /* Rounded corners on hover */
+}
+
+/* Main Container */
+.schemes-section {
+    color: #333;
+    padding: 40px;
+    max-width: 1800px;
+    margin: 80px auto 40px; /* Gives space from the top (for fixed navbar) */
+    font-family: Arial, sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+    height: 65px;
+}
+
+.section-description {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Scheme Item Styles */
+.scheme-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect for Scheme Item */
+.scheme-item:hover {
+    transform: translateY(-5px);  /* Moves the div up slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Makes the shadow more pronounced */
+}
+
+/* Hover Effect for Scheme Title */
+.scheme-item:hover .scheme-title {
+    color: #2ecc71;  /* Change the title color to green when hovering */
+}
+
+/* Scheme Title */
+.scheme-title {
+    font-size: 2rem;
+    color: #006699;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: color 0.3s ease; /* Smooth transition for title color */
+}
+
+/* Scheme Description */
+.scheme-description {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #555;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Scheme Details */
+.scheme-details {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.scheme-details li {
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.scheme-details li strong {
+    color: #006699;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.radha{
+    display: flex;
+    /* justify-content: s; */
+    width: 100%;
+}
+
+</style>
+<body>
+
+    <!-- Header with Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="ho.html">Home</a></li>
+                <li><a href="schemes.html">Schemes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Schemes Section -->
+    <section class="schemes-section">
+        <h1 class="section-title" style="font-family: 'Times New Roman', Times, serif;font-size: 3rem;background-color: #069;">Schemes</h1>
+        <p class="section-description">
+            Explore the various government schemes available for the citizens. 
+            Below are the details for eligibility, application process, and benefits for each scheme.
+        </p>
+
+        <!-- Scheme 1 -->
+        <div class="scheme-item">
+            <h2 class="scheme-title">Pradhan Mantri Awas Yojana (PMAY)</h2>
+            <p class="scheme-description">
+                PMAY aims to provide affordable housing for all by 2022. It offers subsidies for housing construction or purchase.
+            </p>
+            <ul class="scheme-details">
+                <li><strong>Eligibility:</strong> Economically weaker sections, low-income groups, and middle-income groups.</li>
+                <li><strong>Benefits:</strong> Interest subsidy on home loans, affordable housing units, financial assistance for construction.</li>
+                <li><strong><a href="http://127.0.0.1:5500/schme1.html">Application Process:</a></strong> Applications can be submitted online through the official PMAY portal.</li>
+            </ul>
+        </div>
+
+        <!-- Scheme 2 -->
+        <div class="scheme-item">
+            <h2 class="scheme-title">Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA)</h2>
+            <p class="scheme-description">
+                MGNREGA provides guaranteed employment to rural households to create sustainable assets and infrastructure.
+            </p>
+            <ul class="scheme-details">
+                <li><strong>Eligibility:</strong> Rural households willing to do unskilled manual labor.</li>
+                <li><strong>Benefits:</strong> 100 days of guaranteed employment, wages paid for work completed.</li>
+                <li><strong>Application Process:</strong> Individuals can apply through Gram Panchayats and local government offices.</li>
+            </ul>
+        </div>
+
+        <!-- Scheme 3 -->
+        <div class="scheme-item">
+            <h2 class="scheme-title">Pradhan Mantri Jan Dhan Yojana (PMJDY)</h2>
+            <p class="scheme-description">
+                PMJDY aims to ensure access to financial services, such as banking, savings, and insurance for all households.
+            </p>
+            <ul class="scheme-details">
+                <li><strong>Eligibility:</strong> All individuals, especially those from underprivileged sections of society.</li>
+                <li><strong>Benefits:</strong> Zero-balance bank accounts, overdraft facility, accident insurance cover.</li>
+                <li><strong>Application Process:</strong> Applicants can visit nearest banks or financial institutions to open accounts.</li>
+            </ul>
+        </div>
+        <!-- Scheme 4: Maharashtra State Scholarship Scheme -->
+<div class="scheme-item">
+    <h2 class="scheme-title">Maharashtra State Scholarship Scheme</h2>
+    <p class="scheme-description">
+        This scheme provides scholarships to economically disadvantaged students for further education in Maharashtra.
+    </p>
+    <ul class="scheme-details">
+        <li><strong>Eligibility:</strong> Students from economically weaker sections of society in Maharashtra.</li>
+        <li><strong>Benefits:</strong> Financial assistance for tuition fees, exam fees, and other educational expenses.</li>
+        <li><strong>Application Process:</strong> Applications are accepted online through the Maharashtra State Scholarship portal.</li>
+    </ul>
+</div>
+
+<!-- Scheme 5: Maharashtra Rajiv Gandhi Jeevandayee Arogya Yojana (RGJAY) -->
+<div class="scheme-item">
+    <h2 class="scheme-title">Maharashtra Rajiv Gandhi Jeevandayee Arogya Yojana (RGJAY)</h2>
+    <p class="scheme-description">
+        RGJAY provides free medical treatment for various serious illnesses for the economically weaker sections in Maharashtra.
+    </p>
+    <ul class="scheme-details">
+        <li><strong>Eligibility:</strong> BPL families and individuals below the poverty line in Maharashtra.</li>
+        <li><strong>Benefits:</strong> Free medical treatment for surgeries, hospital stays, and diagnostics for over 900 serious diseases.</li>
+        <li><strong>Application Process:</strong> Eligible individuals can apply through empanelled hospitals and health centers in Maharashtra.</li>
+    </ul>
+</div>
+
+<!-- Scheme 6: Swachh Bharat Mission (SBM) -->
+<div class="scheme-item">
+    <h2 class="scheme-title">Swachh Bharat Mission (SBM)</h2>
+    <p class="scheme-description">
+        SBM aims to eliminate open defecation and improve solid waste management across rural and urban India.
+    </p>
+    <ul class="scheme-details">
+        <li><strong>Eligibility:</strong> Rural households, urban areas, schools, and public spaces in India.</li>
+        <li><strong>Benefits:</strong> Financial assistance for constructing toilets, improving sanitation facilities, and cleaning initiatives.</li>
+        <li><strong>Application Process:</strong> Applications can be made through local municipalities, Gram Panchayats, and Swachh Bharat Mission portals.</li>
+    </ul>
+</div>
+
+<!-- Scheme 7: Atal Pension Yojana (APY) -->
+<div class="scheme-item">
+    <h2 class="scheme-title">Atal Pension Yojana (APY)</h2>
+    <p class="scheme-description">
+        APY is a government pension scheme for workers in the unorganized sector, ensuring a monthly pension after retirement.
+    </p>
+    <ul class="scheme-details">
+        <li><strong>Eligibility:</strong> Indian citizens aged between 18 to 40 years working in the unorganized sector.</li>
+        <li><strong>Benefits:</strong> Guaranteed pension of ₹1000 to ₹5000 per month after the age of 60, based on contributions.</li>
+        <li><strong>Application Process:</strong> Applications can be made through the official APY portal or any authorized bank branch.</li>
+    </ul>
+</div>
+
+<!-- Scheme 8: Beti Bachao Beti Padhao Yojana -->
+<div class="scheme-item">
+    <h2 class="scheme-title">Beti Bachao Beti Padhao Yojana</h2>
+    <p class="scheme-description">
+        This scheme aims to prevent female feticide, promote education for girls, and create a safe environment for them.
+    </p>
+    <ul class="scheme-details">
+        <li><strong>Eligibility:</strong> Parents of girls, especially from disadvantaged sections of society, across India.</li>
+        <li><strong>Benefits:</strong> Awareness programs, financial incentives, scholarships for girls' education, and free health services.</li>
+        <li><strong>Application Process:</strong> Applications can be made through local authorities, health centers, and schools.</li>
+    </ul>
+</div>
+
+<!-- Scheme 9: Pradhan Mantri Fasal Bima Yojana (PMFBY) -->
+<div class="scheme-item">
+    <h2 class="scheme-title">Pradhan Mantri Fasal Bima Yojana (PMFBY)</h2>
+    <p class="scheme-description">
+        PMFBY offers insurance coverage to farmers to protect them against crop failures due to natural calamities.
+    </p>
+    <ul class="scheme-details">
+        <li><strong>Eligibility:</strong> All farmers in India, including those who own or lease agricultural land.</li>
+        <li><strong>Benefits:</strong> Coverage for crop loss due to droughts, floods, pests, and other natural disasters.</li>
+        <li><strong>Application Process:</strong> Farmers can register online or through local agriculture offices and banks.</li>
+    </ul>
+    <div></div>
+</div>
+
+<!-- Scheme 10: Maharashtra Vidhwa Pension Yojana -->
+<div class="scheme-item">
+    <h2 class="scheme-title">Maharashtra Vidhwa Pension Yojana</h2>
+    <p class="scheme-description">
+        The Maharashtra Vidhwa Pension Yojana provides financial assistance to widows in Maharashtra to improve their living conditions.
+    </p>
+    <ul class="scheme-details">
+        <li><strong>Eligibility:</strong> Widows residing in Maharashtra, aged between 18 to 60 years.</li>
+        <li><strong>Benefits:</strong> Monthly pension to assist widows in their living expenses.</li>
+        <li><strong>Application Process:</strong> Applications can be submitted to local offices of the Social Welfare Department in Maharashtra.</li>
+    </ul>
+</div>
+
+        <!-- Add more schemes here -->
+
+    </section>
+    <!-- Chatbot Interface -->
+
+
+
+</body>
+</html>
